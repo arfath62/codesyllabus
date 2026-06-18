@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.founder-portrait-shell {
+  animation: founder-float 5.5s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.founder-portrait-halo {
+  animation: founder-halo 3.8s ease-in-out infinite;
+  transform: rotate(-2deg);
+}
+
+.founder-portrait-image {
+  animation: founder-tilt 7s ease-in-out infinite;
+}
+
+@keyframes founder-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes founder-halo {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: rotate(-2deg) scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: rotate(2deg) scale(1.035);
+  }
+}
+
+@keyframes founder-tilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .founder-portrait-shell,
+  .founder-portrait-halo,
+  .founder-portrait-image {
+    animation: none;
+  }
+}

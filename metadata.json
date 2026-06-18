@@ -1,0 +1,6 @@
+{
+  "name": "CodeSyllabus Playground",
+  "description": "A full-stack brutalist programming sandbox where users master multi-language developer skillsets and standard library practices. Complete structured syllabus tracks with real-time compilers, direct execution stdout feedback, and interactive syllabus timelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
